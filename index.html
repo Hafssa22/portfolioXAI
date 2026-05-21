@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hafssa ARCHI — AI Builder Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="prog-bar"></div>
+
+<nav>
+  <div class="nav-brand">Hafssa Archi</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Accueil</a></li>
+    <li><a href="#xai">XAI Fit</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#stages">Expériences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#cta-final">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- FLOATING AVATAR -->
+<div id="float-container">
+  <div id="float-msg"><span id="float-text"></span></div>
+  <svg viewBox="0 0 80 100" width="60" height="75" xmlns="http://www.w3.org/2000/svg"
+       style="animation:float 3s ease-in-out infinite;filter:drop-shadow(0 8px 20px rgba(201,169,110,0.2))">
+    <defs>
+      <radialGradient id="fg1" cx="40%" cy="35%" r="65%">
+        <stop offset="0%" stop-color="#e8c98a"/>
+        <stop offset="100%" stop-color="#8c6930"/>
+      </radialGradient>
+      <radialGradient id="fv1" cx="35%" cy="35%" r="65%">
+        <stop offset="0%" stop-color="#c8e4f8"/>
+        <stop offset="100%" stop-color="#3a6ea0"/>
+      </radialGradient>
+    </defs>
+    <rect x="52" y="32" width="18" height="28" rx="4" fill="#8c6930"/>
+    <ellipse cx="36" cy="64" rx="28" ry="34" fill="url(#fg1)"/>
+    <circle cx="36" cy="32" r="30" fill="url(#fg1)"/>
+    <ellipse cx="34" cy="34" rx="18" ry="14" fill="url(#fv1)" opacity=".95"/>
+    <ellipse cx="27" cy="30" rx="5" ry="5" fill="white" opacity=".22" transform="rotate(-15 27 30)"/>
+    <ellipse cx="26" cy="88" rx="13" ry="8" fill="#8c6930"/>
+    <ellipse cx="46" cy="88" rx="13" ry="8" fill="#8c6930"/>
+    <ellipse cx="20" cy="94" rx="10" ry="5" fill="#6b5020"/>
+    <ellipse cx="52" cy="94" rx="10" ry="5" fill="#6b5020"/>
+  </svg>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Portfolio · Data Science & IA · 2025</div>
+    <h1 class="hero-name">Hafssa<br><span>Archi</span></h1>
+    <div class="hero-role">Étudiante ingénieure en IA générative<br>LLM · RAG · Systèmes intelligents</div>
+    <div class="hero-tagline">
+      Spécialisée en architectures RAG et LLM (LLaMA 3).<br>
+      Passionnée par la construction de produits IA à impact réel.<br>
+      Future builder — prête à rejoindre XAI Morocco 🇲🇦
+    </div>
+    <div class="hero-btns">
+      <a href="https://github.com/Hafssa22" class="btn-primary" target="_blank">GitHub →</a>
+      <a href="https://linkedin.com/in/hafsa-archi-6699a129a/" class="btn-outline" target="_blank">LinkedIn</a>
+      <a href="mailto:hafssa.archi@esi.ac.ma" class="btn-outline">Email</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="speech-bubble">
+      <div class="bubble-text" id="hero-dialog"></div><span class="bubble-cursor"></span>
+    </div>
+    <div class="avatar-wrapper">
+      <div class="avatar-ring"></div>
+      <svg viewBox="0 0 200 260" width="200" height="260" xmlns="http://www.w3.org/2000/svg"
+           style="animation:float 3.5s ease-in-out infinite;">
+        <defs>
+          <radialGradient id="hg" cx="38%" cy="33%" r="68%">
+            <stop offset="0%" stop-color="#e8cf9a"/>
+            <stop offset="55%" stop-color="#c9a96e"/>
+            <stop offset="100%" stop-color="#7a5520"/>
+          </radialGradient>
+          <radialGradient id="hv" cx="33%" cy="33%" r="67%">
+            <stop offset="0%" stop-color="#d8eeff"/>
+            <stop offset="100%" stop-color="#3a6ea0"/>
+          </radialGradient>
+          <radialGradient id="hbk" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#a07840"/>
+            <stop offset="100%" stop-color="#5c3f10"/>
+          </radialGradient>
+          <filter id="soft"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+        <rect x="118" y="88" width="38" height="54" rx="8" fill="url(#hbk)"/>
+        <rect x="121" y="91" width="32" height="48" rx="6" fill="#5c3f10"/>
+        <ellipse cx="86" cy="170" rx="60" ry="74" fill="url(#hg)"/>
+        <circle cx="86" cy="82" r="66" fill="url(#hg)"/>
+        <ellipse cx="82" cy="86" rx="40" ry="30" fill="url(#hv)" opacity=".97" filter="url(#soft)"/>
+        <ellipse cx="65" cy="74" rx="12" ry="9" fill="white" opacity=".18" transform="rotate(-20 65 74)"/>
+        <line x1="44" y1="86" x2="118" y2="86" stroke="rgba(160,210,255,0.35)" stroke-width="2">
+          <animate attributeName="y1" values="70;102;70" dur="3.5s" repeatCount="indefinite"/>
+          <animate attributeName="y2" values="70;102;70" dur="3.5s" repeatCount="indefinite"/>
+        </line>
+        <ellipse cx="62" cy="236" rx="26" ry="17" fill="#a07840"/>
+        <ellipse cx="110" cy="236" rx="26" ry="17" fill="#a07840"/>
+        <ellipse cx="52" cy="248" rx="22" ry="11" fill="#7a5520"/>
+        <ellipse cx="120" cy="248" rx="22" ry="11" fill="#7a5520"/>
+        <ellipse cx="86" cy="255" rx="50" ry="8" fill="rgba(201,169,110,0.08)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- XAI FIT -->
+<section class="page-section" id="xai">
+  <div class="sec-label">Pourquoi XAI</div>
+  <h2 class="sec-title">Pourquoi je veux rejoindre <em>XAI</em></h2>
+  <div class="xai-banner">
+    <h3>Ce que XAI cherche — ce que j'apporte</h3>
+    <p>XAI veut des <strong>builders, pas des stagiaires café</strong>. Des personnes capables d'exécuter, d'apprendre vite, de livrer. C'est exactement ma philosophie : chaque projet, chaque stage, chaque ligne de code orienté vers un résultat concret et mesurable.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
+    <div class="proj-card" style="border-left:2px solid var(--gold);">
+      <div class="proj-icon">🚀</div>
+      <div class="proj-name" style="font-size:15px;">Real Execution</div>
+      <div class="proj-desc">Réduction de latence de 53s → 2s sur un LLM réel. Je livre des résultats mesurables, pas des promesses.</div>
+    </div>
+    <div class="proj-card" style="border-left:2px solid var(--accent-teal);">
+      <div class="proj-icon">🤖</div>
+      <div class="proj-name" style="font-size:15px;">AI / LLM Engineering</div>
+      <div class="proj-desc">RAG, embeddings, Vector Search, LLaMA 3 quantized. Expérience hands-on, pas uniquement théorique.</div>
+    </div>
+    <div class="proj-card" style="border-left:2px solid var(--accent-blue);">
+      <div class="proj-icon">⚙️</div>
+      <div class="proj-name" style="font-size:15px;">Automation & Systems</div>
+      <div class="proj-desc">Architecture Kafka, Spring Batch, Redis cache. Je pense en systèmes, pas en simples scripts.</div>
+    </div>
+    <div class="proj-card" style="border-left:2px solid var(--gold);">
+      <div class="proj-icon">🌱</div>
+      <div class="proj-name" style="font-size:15px;">Team Culture</div>
+      <div class="proj-desc">Certifiée Scrum, habituée à l'Agile. Je construis avec les équipes, pas à côté d'elles.</div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- PARCOURS -->
+<section class="page-section" id="parcours">
+  <div class="sec-label">Formation</div>
+  <h2 class="sec-title">Mon <em>parcours</em> académique</h2>
+  <div class="timeline">
+    <div class="tl-item d1">
+      <div class="tl-dot"></div>
+      <div class="tl-date">2024 — Présent</div>
+      <div class="tl-title">Ingénierie de la Connaissance & Data Science</div>
+      <div class="tl-org">École des Sciences de l'Information (ESI) · Rabat</div>
+      <div class="tl-desc">Formation d'élite en IA, Data Science et Knowledge Engineering. Spécialisation en LLM et architectures RAG avancées. Conception de pipelines de données pour des applications réelles.</div>
+    </div>
+    <div class="tl-item d2">
+      <div class="tl-dot"></div>
+      <div class="tl-date">2022 — 2024</div>
+      <div class="tl-title">Classes Préparatoires aux Grandes Écoles (CPGE)</div>
+      <div class="tl-org">Kotoubia Prépa · Marrakech</div>
+      <div class="tl-desc">Deux années de formation scientifique intensive. Rigueur analytique, résolution de problèmes complexes sous pression. Une école de la discipline et de la persévérance.</div>
+    </div>
+    <div class="tl-item d3">
+      <div class="tl-dot"></div>
+      <div class="tl-date">2022</div>
+      <div class="tl-title">Baccalauréat en Sciences Physiques</div>
+      <div class="tl-org">Lycée Al Massira Al Khadrae · Marrakech</div>
+      <div class="tl-desc">Mention obtenue. Fondations solides en physique et mathématiques — le point de départ vers la data et l'intelligence artificielle.</div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- STAGES -->
+<section class="page-section" id="stages">
+  <div class="sec-label">Expériences professionnelles</div>
+  <h2 class="sec-title">Du code en <em>production</em></h2>
+  <div class="stage-card d1">
+    <div class="stage-accent"></div>
+    <div class="stage-period">OCT 2025 — DÉC 2025</div>
+    <div class="stage-title">AI Cooking Assistant — LLM Engineer</div>
+    <div class="stage-org">Projet IA Générative · En ligne</div>
+    <ul class="stage-list">
+      <li>Déploiement de <strong>LLaMA 3 8B quantized (4-bit)</strong> avec architecture RAG complète et routage intelligent</li>
+      <li>Cache Redis : latence réduite de <span class="stage-highlight">53s → 2s</span> (réduction de 96%)</li>
+      <li>API REST avec <strong>FastAPI</strong> incluant monitoring des KPIs en temps réel</li>
+      <li>Routage intelligent entre base de données, recherche vectorielle et génération LLM</li>
+    </ul>
+  </div>
+  <div class="stage-card d2">
+    <div class="stage-accent"></div>
+    <div class="stage-period">JUIL 2025 — AOÛT 2025</div>
+    <div class="stage-title">Développeuse Backend & Data</div>
+    <div class="stage-org">Centre Hospitalier Universitaire (CHU) · Marrakech</div>
+    <ul class="stage-list">
+      <li>Conception de <strong>microservices REST</strong> avec Spring Boot et intégration HOSIX & AGiR</li>
+      <li>Architecture événementielle avec <strong>Apache Kafka</strong> — scalabilité et fiabilité garanties</li>
+      <li>Migration de données critiques via <strong>Spring Batch</strong> avec validation rigoureuse</li>
+      <li>Dashboard <strong>React</strong> pour visualisation des données hospitalières en temps réel</li>
+    </ul>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- PROJETS -->
+<section class="page-section" id="projets">
+  <div class="sec-label">Projets académiques</div>
+  <h2 class="sec-title">Apprendre en <em>construisant</em></h2>
+  <div class="proj-grid">
+    <div class="proj-card d1">
+      <div class="proj-icon">🎮</div>
+      <div class="proj-name">GameVerse Academy</div>
+      <div class="proj-stack">Java EE · MVC · Maven</div>
+      <div class="proj-desc">Application Web complète en architecture MVC avec authentification, gestion de sessions sécurisées et soumission de contenu. Déployée avec Maven.</div>
+    </div>
+    <div class="proj-card d2">
+      <div class="proj-icon">🩺</div>
+      <div class="proj-name">Diagnostic Maladie Rénale (CKD)</div>
+      <div class="proj-stack">Python · Scikit-learn · Random Forest · SVM</div>
+      <div class="proj-desc">Analyse de 24 variables cliniques. Clustering K-Means pour identifier les profils patients. Classification avec Random Forest et SVM pour prédire la maladie chronique rénale.</div>
+    </div>
+    <div class="proj-card d3">
+      <div class="proj-icon">⛽</div>
+      <div class="proj-name">Fuel Consumption Predictor</div>
+      <div class="proj-stack">Python · Régression · Feature Engineering</div>
+      <div class="proj-desc">Prédiction de consommation carburant avec régression linéaire, Ridge, Lasso et polynomiale. Feature engineering avancé et comparaison rigoureuse des performances des modèles.</div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- SKILLS -->
+<section class="page-section" id="skills">
+  <div class="sec-label">Compétences</div>
+  <h2 class="sec-title">Ma <em>boîte à outils</em></h2>
+  <div class="skills-layout">
+    <div class="skill-group d1">
+      <div class="skill-group-title">IA Générative</div>
+      <div class="tag-list">
+        <span class="tag">LLaMA 3</span><span class="tag">RAG</span><span class="tag">Embeddings</span>
+        <span class="tag">Vector Search</span><span class="tag">HuggingFace</span>
+      </div>
+    </div>
+    <div class="skill-group d2">
+      <div class="skill-group-title">Langages</div>
+      <div class="tag-list">
+        <span class="tag">Python</span><span class="tag">Java</span><span class="tag">SQL</span>
+        <span class="tag">PLSQL</span><span class="tag">NoSQL</span>
+      </div>
+    </div>
+    <div class="skill-group d3">
+      <div class="skill-group-title">Backend & Data</div>
+      <div class="tag-list">
+        <span class="tag">FastAPI</span><span class="tag">Spring Boot</span>
+        <span class="tag">Redis</span><span class="tag">Kafka</span>
+      </div>
+    </div>
+    <div class="skill-group d4">
+      <div class="skill-group-title">ML & Data Science</div>
+      <div class="tag-list">
+        <span class="tag">Scikit-learn</span><span class="tag">PyTorch</span>
+        <span class="tag">Random Forest</span><span class="tag">SVM</span><span class="tag">Clustering</span>
+      </div>
+    </div>
+    <div class="skill-group d5">
+      <div class="skill-group-title">DevOps & Outils</div>
+      <div class="tag-list">
+        <span class="tag">Git</span><span class="tag">Docker</span>
+        <span class="tag">Maven</span><span class="tag">Agile/Scrum</span>
+      </div>
+    </div>
+    <div class="skill-group d6">
+      <div class="skill-group-title">Bases de données</div>
+      <div class="tag-list">
+        <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">Redis</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;">
+    <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--accent-teal);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;">Certifications</div>
+    <div class="cert-card d1">
+      <div class="cert-badge">🏅</div>
+      <div><div class="cert-name">Scrum Fundamentals Certified — SFC™</div><div class="cert-issuer">SCRUMstudy · ID : 1116203</div></div>
+    </div>
+    <div class="cert-card d2">
+      <div class="cert-badge">🤖</div>
+      <div><div class="cert-name">Getting Started with Machine Learning Algorithms</div><div class="cert-issuer">Code : 9593028</div></div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;">
+    <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--accent-teal);letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Langues</div>
+    <div class="lang-row">
+      <div class="lang-pill"><div class="lang-flag">🇲🇦</div><div><div class="lang-name">Arabe</div><div class="lang-level">Langue maternelle</div></div></div>
+      <div class="lang-pill"><div class="lang-flag">🇫🇷</div><div><div class="lang-name">Français</div><div class="lang-level">B2 — Intermédiaire avancé</div></div></div>
+      <div class="lang-pill"><div class="lang-flag">🇬🇧</div><div><div class="lang-name">Anglais</div><div class="lang-level">Intermédiaire</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider"></div>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="cta-avatar-wrap" id="cta-avatar">
+    <div class="cta-rings">
+      <div class="ring"></div><div class="ring"></div><div class="ring"></div>
+    </div>
+    <svg viewBox="0 0 300 390" width="300" height="390" xmlns="http://www.w3.org/2000/svg"
+         style="animation:float 4s ease-in-out infinite;">
+      <defs>
+        <radialGradient id="cg" cx="38%" cy="32%" r="68%">
+          <stop offset="0%" stop-color="#f0daa0"/>
+          <stop offset="50%" stop-color="#c9a96e"/>
+          <stop offset="100%" stop-color="#6b4510"/>
+        </radialGradient>
+        <radialGradient id="cv" cx="33%" cy="33%" r="67%">
+          <stop offset="0%" stop-color="#dff0ff"/>
+          <stop offset="100%" stop-color="#2a5a90"/>
+        </radialGradient>
+        <radialGradient id="cbk" cx="50%" cy="40%" r="60%">
+          <stop offset="0%" stop-color="#b08840"/>
+          <stop offset="100%" stop-color="#5c3510"/>
+        </radialGradient>
+        <filter id="gsoft"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <rect x="178" y="132" width="56" height="80" rx="12" fill="url(#cbk)"/>
+      <rect x="183" y="137" width="46" height="70" rx="9" fill="#4a2a08"/>
+      <line x1="206" y1="137" x2="206" y2="207" stroke="#3a2008" stroke-width="2"/>
+      <ellipse cx="130" cy="254" rx="89" ry="110" fill="url(#cg)"/>
+      <circle cx="130" cy="122" r="100" fill="url(#cg)"/>
+      <ellipse cx="124" cy="128" rx="60" ry="45" fill="url(#cv)" opacity=".97" filter="url(#gsoft)"/>
+      <ellipse cx="98" cy="110" rx="18" ry="13" fill="white" opacity=".2" transform="rotate(-20 98 110)"/>
+      <line x1="66" y1="128" x2="180" y2="128" stroke="rgba(160,220,255,0.35)" stroke-width="3">
+        <animate attributeName="y1" values="105;152;105" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="y2" values="105;152;105" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <ellipse cx="94" cy="354" rx="38" ry="26" fill="#a07840"/>
+      <ellipse cx="166" cy="354" rx="38" ry="26" fill="#a07840"/>
+      <ellipse cx="78" cy="372" rx="32" ry="16" fill="#7a5520"/>
+      <ellipse cx="182" cy="372" rx="32" ry="16" fill="#7a5520"/>
+      <ellipse cx="130" cy="383" rx="75" ry="12" fill="rgba(201,169,110,0.1)"/>
+      <circle cx="30" cy="60" r="3" fill="rgba(201,169,110,0.5)"><animate attributeName="opacity" values="0;1;0" dur="2.5s" repeatCount="indefinite"/></circle>
+      <circle cx="255" cy="75" r="2.5" fill="rgba(201,169,110,0.4)"><animate attributeName="opacity" values="0;1;0" dur="3s" begin=".8s" repeatCount="indefinite"/></circle>
+      <circle cx="272" cy="200" r="2" fill="rgba(77,184,168,0.5)"><animate attributeName="opacity" values="0;1;0" dur="2s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="15" cy="200" r="2" fill="rgba(201,169,110,0.4)"><animate attributeName="opacity" values="0;1;0" dur="2.8s" begin=".4s" repeatCount="indefinite"/></circle>
+    </svg>
+  </div>
+
+  <div class="cta-bubble" id="cta-bubble">
+    <span id="cta-text"></span><span class="bubble-cursor"></span>
+  </div>
+
+  <div class="cta-text" id="cta-textblock">
+    <div class="cta-question">Maintenant que vous connaissez <em>Hafssa</em>,<br>vous voulez la recruter ?</div>
+    <div class="cta-sub">Vous pouvez la trouver ici ↓</div>
+    <div class="cta-btns">
+      <a href="mailto:hafssa.archi@esi.ac.ma" class="cta-btn cta-btn-email">
+        <span>✉️</span> hafssa.archi@esi.ac.ma
+      </a>
+      <a href="tel:+212614983791" class="cta-btn cta-btn-phone">
+        <span>📞</span> +212 614 983 791
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>Hafssa Archi</strong> · Data Science & IA · ESI Rabat · 2025<br>
+  <span style="font-size:11px;color:var(--text-muted);margin-top:6px;display:block;">Built with ambition, curiosity & a love for AI 🇲🇦</span>
+</footer>
+
+<script>
+/* SCROLL PROGRESS */
+window.addEventListener('scroll', () => {
+  const p = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  document.getElementById('prog-bar').style.width = p + '%';
+});
+
+/* TYPEWRITER */
+function typewrite(el, text, speed, cb) {
+  el.textContent = '';
+  let i = 0;
+  function next() {
+    if (i < text.length) { el.textContent += text[i++]; setTimeout(next, speed); }
+    else if (cb) cb();
+  }
+  next();
+}
+
+/* HERO */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    typewrite(document.getElementById('hero-dialog'),
+      "Salut ! Moi c'est Hafssa 👋 Étudiante en IA à l'ESI de Rabat. Faites défiler pour découvrir mon univers !",
+      28);
+  }, 500);
+});
+
+/* NARRATIONS */
+const narrations = {
+  xai:       "XAI cherche des builders ? J'ai déjà réduit la latence d'un LLM de 53s à 2s. Je n'attends pas, j'exécute — et je livre.",
+  parcours:  "De la prépa scientifique à Marrakech jusqu'à l'ESI Rabat : chaque étape choisie avec intention, vers un seul but — maîtriser l'IA.",
+  stages:    "Deux stages, deux mondes : LLaMA 3 & RAG en ligne, puis microservices Java au CHU. Du vrai code, des vrais impacts.",
+  projets:   "ML clinique, Java EE, prédiction de données réelles... Chaque projet m'a appris quelque chose. La curiosité, c'est mon moteur.",
+  skills:    "Python, LLM, RAG, FastAPI, Kafka, Docker... une stack technique solide qui évolue chaque semaine avec l'IA.",
+  'cta-final': null
+};
+
+const floatMsg = document.getElementById('float-msg');
+const floatText = document.getElementById('float-text');
+let currentSec = '';
+
+function showNarration(text) {
+  floatMsg.classList.add('show');
+  typewrite(floatText, text, 26);
+}
+
+const secObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const sid = entry.target.id;
+
+    entry.target.querySelectorAll(
+      '.tl-item,.proj-card,.skill-group,.stage-card,.cert-card,.xai-banner'
+    ).forEach(el => el.classList.add('visible'));
+
+    if (sid && narrations[sid] !== undefined && sid !== currentSec) {
+      currentSec = sid;
+      if (narrations[sid]) {
+        showNarration(narrations[sid]);
+      } else {
+        floatMsg.classList.remove('show');
+        setTimeout(() => { floatText.textContent = ''; }, 400);
+      }
+    }
+  });
+}, { threshold: 0.25 });
+
+document.querySelectorAll('section[id], .page-section[id]').forEach(s => secObserver.observe(s));
+
+/* CTA FINAL */
+const ctaObs = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    document.getElementById('cta-avatar').classList.add('visible');
+    document.getElementById('cta-textblock').classList.add('visible');
+    const bubble = document.getElementById('cta-bubble');
+    const ctaEl = document.getElementById('cta-text');
+    setTimeout(() => {
+      bubble.classList.add('visible');
+      typewrite(ctaEl,
+        "Voilà, vous me connaissez maintenant ! La prochaine étape... c'est vous qui la faites 😊",
+        30);
+    }, 700);
+  });
+}, { threshold: 0.3 });
+ctaObs.observe(document.getElementById('cta-final'));
+
+/* NAV SMOOTH */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+</script>
+
+</body>
+</html>
